@@ -19,6 +19,20 @@ header {
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
+.banner {
+    position: relative;    /* allows text to sit on top */
+    width: 100%;
+    height: 200px;         /* adjust size */
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* makes it look clean */
+    display: block;
+}
+;
 
 .logo {
   max-width: 100px;
@@ -101,6 +115,45 @@ section p {
   color: #e0ffe0;
 }
 
+
+/* Main video container */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+/* Style each video */
+video {
+    width: 320px;      /* Change size */
+    height: auto;      /* Keeps video ratio */
+    border-radius: 15px;   /* Curve the edges */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Nice shadow */
+    border: 2px solid green;
+    transition: transform 0.3s ease; /* Smooth hover animation */
+}
+
+/* Hover effect */
+video:hover {
+    transform: scale(1.05); /* Grows slightly when hovered */
+    border-color: green;
+}
+.image-container{
+width: 200px;
+height: 200px;
+border-radius: 20px;
+}
+img{
+width: 320px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+}
 .contact, .location {
   text-align: center;
 }
