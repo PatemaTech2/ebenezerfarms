@@ -15,6 +15,7 @@
     <div class="logo">
       
       <p>Ebenezer Farms Nigeria Ltd</p>
+      <p>We wish you a Merry CHristmas</p>
     </div>
     <nav>
       <ul>
@@ -32,7 +33,30 @@
       <p>Providing 100% stone-free, premium long-grain rice from Omor and Adani.</p>
     </div>
   </section>
-  
+  <!-- Snowflakes -->
+<div class="snowflake">❄</div>
+<div class="snowflake">✶</div>
+<div class="snowflake">❅</div>
+<div class="snowflake">❄</div>
+<div class="snowflake">✼</div>
+<div class="snowflake">❆</div>
+<div class="snowflake">❄</div>
+<div class="snowflake">❅</div>
+<div class="snowflake">✶</div>
+
+<script>
+    // Randomize falling speed + position
+    document.querySelectorAll(".snowflake").forEach(flake => {
+        const duration = Math.random() * 5 + 5; 
+        const delay = Math.random() * 5;
+        const x = Math.random() * 100;
+
+        flake.style.left = x + "vw";
+        flake.style.animationDuration = duration + "s";
+        flake.style.animationDelay = delay + "s";
+        flake.style.fontSize = (Math.random() * 10 + 10) + "px";
+    });
+</script>
 <a href="product.html" class="btn">View Our Products</a>
 
 
@@ -68,7 +92,7 @@
     
         <img src="riepi1.jpg" alt="products" class="riepi1">
         <img src="rice2.jpg" alt="products">
-       
+   
     </div>
 </div>
 
@@ -80,6 +104,8 @@
   </section>
 
   <section id="contact">
+    <img src="xmas 2.jpg" alt="Contact">
+    <img src="riexmax.jpg" alt="Contact">
     <h2>Get in Touch</h2>
     <p><strong>Phone:</strong> +2348033239587</p>
     <p><strong>Email:</strong> <a href="mailto:ebenezerfarmslimited@gmail.com">ebenezerfarmslimited@gmail.com</a></p>
